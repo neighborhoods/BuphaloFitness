@@ -18,9 +18,9 @@ interface CarInterface
 
     public function getMake(): string;
 
-    public function hasMake(): bool;
+    public function setMake(string $make): CarInterface;
 
-    public function setMake(string $vin): CarInterface;
+    public function hasMake(): bool;
 
     public function getColor(): string;
 }

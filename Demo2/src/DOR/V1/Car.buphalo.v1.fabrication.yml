@@ -1,10 +1,10 @@
 actors:
   <ActorName>.php:
     template: Actor.php
-  <ActorName>.service.yml:
-    template: Actor.service.yml
   <ActorName>Interface.php:
     template: ActorInterface.php
+  <ActorName>.service.yml:
+    template: Actor.service.yml
   <ActorName>/AwareTrait.php:
     template: Actor/AwareTrait.php
   <ActorName>/Factory.php:

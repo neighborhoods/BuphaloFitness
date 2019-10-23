@@ -6,38 +6,13 @@ namespace Neighborhoods\BuphaloFitness\Demo2\DOR\V1;
 class Car implements CarInterface
 {
     /** @var string */
-    public $model;
+    private $color;
 
     /** @var string */
-    public $color;
+    private $make;
 
     /** @var string */
-    public $make;
-
-    public function getModel(): string
-    {
-        if ($this->model === null) {
-            throw new \LogicException('Car model has not been set.');
-        }
-
-        return $this->model;
-    }
-
-    public function hasModel(): bool
-    {
-        return $this->model !== null;
-    }
-
-    public function setModel(string $model): CarInterface
-    {
-        if ($this->model !== null) {
-            throw new \LogicException('Car model is already set.');
-        }
-
-        $this->model = $model;
-
-        return $this;
-    }
+    private $model;
 
     public function getColor(): string
     {
@@ -67,7 +42,7 @@ class Car implements CarInterface
     public function getMake(): string
     {
         if ($this->make === null) {
-            throw new \LogicException('Car vin has not been set.');
+            throw new \LogicException('Car make has not been set.');
         }
 
         return $this->make;
@@ -81,10 +56,35 @@ class Car implements CarInterface
     public function setMake(string $make): CarInterface
     {
         if ($this->make !== null) {
-            throw new \LogicException('Car vin is already set.');
+            throw new \LogicException('Car make is already set.');
         }
 
         $this->make = $make;
+
+        return $this;
+    }
+
+    public function getModel(): string
+    {
+        if ($this->model === null) {
+            throw new \LogicException('Car model has not been set.');
+        }
+
+        return $this->model;
+    }
+
+    public function hasModel(): bool
+    {
+        return $this->model !== null;
+    }
+
+    public function setModel(string $model): CarInterface
+    {
+        if ($this->model !== null) {
+            throw new \LogicException('Car model is already set.');
+        }
+
+        $this->model = $model;
 
         return $this;
     }
