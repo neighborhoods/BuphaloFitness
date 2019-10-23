@@ -2,30 +2,13 @@
 
 namespace Neighborhoods\BuphaloFitness\Demo3\AnnotationProcessors;
 
-use Neighborhoods\Buphalo\AnnotationProcessor\ContextInterface;
-use Neighborhoods\Buphalo\AnnotationProcessorInterface;
+use Neighborhoods\Buphalo\V1\AnnotationProcessor\Context;
+use Neighborhoods\Buphalo\V1\AnnotationProcessorInterface;
 
 class DAO implements AnnotationProcessorInterface
 {
-    /** @var ContextInterface */
-    private $context;
-
-    public function setAnnotationProcessorContext(ContextInterface $Context)
-    {
-        if ($this->context !== null) {
-            throw new \LogicException('DAO Annotation Processor context is already set');
-        }
-
-        $this->context = $Context;
-    }
-
-    public function getAnnotationProcessorContext(): ContextInterface
-    {
-        if ($this->context === null) {
-            throw new \LogicException('DAO Annotation Processor context is not set');
-        }
-
-        return $this->context;
+    Use Context\AwareTrait {
+        getAnnotationProcessorContext as public;
     }
 
     public function getReplacement(): string
@@ -64,7 +47,7 @@ EOC;
      public function get$upperName(): $type
      {
          if (\$this->$name === null) {
-             throw new \LogicException('$name has not been set');
+             throw new \\LogicException('$name has not been set');
          }
          
          return \$this->$name;
@@ -73,7 +56,7 @@ EOC;
      public function set$upperName($type \$$name): $interface
      {
          if (\$this->$name !== null) {
-             throw new \LogicException('$name has already been set');
+             throw new \\LogicException('$name has already been set');
          }
          
          \$this->$name = \$$name;
