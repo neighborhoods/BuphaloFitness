@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3769f24ce8a89936bab72488f20fdbfe",
+    "content-hash": "f26d87862f771e46031a72f17c5e6ae5",
     "packages": [
         {
             "name": "fig/http-message-util",
@@ -129,17 +129,17 @@
         },
         {
             "name": "neighborhoods/buphalo",
-            "version": "1.0.0-beta9",
+            "version": "1.0.0-RC3",
             "source": {
                 "type": "git",
                 "url": "git@github.com:neighborhoods/Buphalo.git",
-                "reference": "6b39216e19a40683f0a552875d08398f6b21857d"
+                "reference": "dfac5430ed77d19e8d127c5f456c28f76eb9fe34"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://satis.neighborhoods.com/dist/neighborhoods/buphalo/neighborhoods-buphalo-6b39216e19a40683f0a552875d08398f6b21857d-zip-4da2fe.tar",
-                "reference": "6b39216e19a40683f0a552875d08398f6b21857d",
-                "shasum": "0a2eea3da210298edfd56c895981022362a62ebc"
+                "url": "https://satis.neighborhoods.com/dist/neighborhoods/buphalo/neighborhoods-buphalo-dfac5430ed77d19e8d127c5f456c28f76eb9fe34-zip-a20269.tar",
+                "reference": "dfac5430ed77d19e8d127c5f456c28f76eb9fe34",
+                "shasum": "86e99005dc716ce1bc682084fa7f5e6bb6423834"
             },
             "require": {
                 "ext-json": "*",
@@ -152,7 +152,9 @@
                 "symfony/yaml": "^4.2"
             },
             "bin": [
-                "bin/buphalo"
+                "bin/v1/buphalo",
+                "bin/v1/makephar",
+                "bin/v1/upgrade"
             ],
             "type": "library",
             "autoload": {
@@ -181,7 +183,7 @@
                 "Buphalo",
                 "Code Generation"
             ],
-            "time": "2019-10-14T16:47:21+00:00"
+            "time": "2019-10-23T16:09:41+00:00"
         },
         {
             "name": "neighborhoods/container-builder",
