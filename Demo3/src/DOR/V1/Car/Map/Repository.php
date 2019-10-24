@@ -28,9 +28,9 @@ class Repository implements RepositoryInterface
     {
         return [
             [
-                'color' => 'red',
-                'make' => 'Tesla',
-                'model' => 'S'
+                'color' => 'black',
+                'make' => 'Kia',
+                'model' => 'Sportage'
             ],
             [
                 'color' => 'silver',

@@ -1,7 +1,8 @@
+#! /usr/bin/env php
 <?php
 
 use Neighborhoods\BuphaloFitness\Demo3\DOR;
-use Neighborhoods\Buphalo\Protean\Container;
+use Neighborhoods\Buphalo\V1\Protean\Container;
 
 require_once (__DIR__ . '/../vendor/autoload.php');
 

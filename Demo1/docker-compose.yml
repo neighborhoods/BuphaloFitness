@@ -24,6 +24,3 @@ services:
             - "9002"
         environment:
             PHP_IDE_CONFIG: "serverName=demo1.buphalofitness.neighborhoods.com"
-        extra_hosts:
-            - "dockerhost:10.200.10.1"
-        dns: 10.200.10.1
