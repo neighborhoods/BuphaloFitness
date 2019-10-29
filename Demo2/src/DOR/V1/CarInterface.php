@@ -6,11 +6,11 @@ namespace Neighborhoods\BuphaloFitness\Demo2\DOR\V1;
 interface CarInterface
 {
 
+    public function setYear(int $year): CarInterface;
+
     public function getModel(): string;
 
     public function hasYear(): bool;
-
-    public function setYear(int $color): CarInterface;
 
     public function hasModel(): bool;
 

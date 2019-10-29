@@ -17,7 +17,7 @@ class Car implements CarInterface
     public function getYear(): int
     {
         if ($this->year === null) {
-            throw new \LogicException('Car color has not been set.');
+            throw new \LogicException('Car year has not been set.');
         }
 
         return $this->year;
@@ -28,13 +28,13 @@ class Car implements CarInterface
         return $this->year !== null;
     }
 
-    public function setYear(int $color): CarInterface
+    public function setYear(int $year): CarInterface
     {
         if ($this->year !== null) {
-            throw new \LogicException('Car color is already set.');
+            throw new \LogicException('Car year is already set.');
         }
 
-        $this->year = $color;
+        $this->year = $year;
 
         return $this;
     }

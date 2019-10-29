@@ -28,6 +28,11 @@ class Repository implements RepositoryInterface
     {
         return [
             [
+                'year' => 2013,
+                'make' => 'Acura',
+                'model' => 'RDX',
+            ],
+            [
                 'year' => 2017,
                 'make' => 'Jeep',
                 'model' => 'Cherokee',

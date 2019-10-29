@@ -1,24 +1,24 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b35c583c0c6f6a85f912adb561cbbc59",
+    "content-hash": "de56a0b402628cedb34b5c9917f42d2a",
     "packages": [
         {
             "name": "neighborhoods/buphalo",
-            "version": "1.0.0-RC3",
+            "version": "1.0.0-RC5",
             "source": {
                 "type": "git",
                 "url": "git@github.com:neighborhoods/Buphalo.git",
-                "reference": "dfac5430ed77d19e8d127c5f456c28f76eb9fe34"
+                "reference": "f045f12ffbbf090f4a64f2bcbee666d75f185c74"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://satis.neighborhoods.com/dist/neighborhoods/buphalo/neighborhoods-buphalo-dfac5430ed77d19e8d127c5f456c28f76eb9fe34-zip-a20269.tar",
-                "reference": "dfac5430ed77d19e8d127c5f456c28f76eb9fe34",
-                "shasum": "86e99005dc716ce1bc682084fa7f5e6bb6423834"
+                "url": "https://satis.neighborhoods.com/dist/neighborhoods/buphalo/neighborhoods-buphalo-f045f12ffbbf090f4a64f2bcbee666d75f185c74-zip-dc9dc8.tar",
+                "reference": "f045f12ffbbf090f4a64f2bcbee666d75f185c74",
+                "shasum": "52037867747db41422ab589bedb4648e8f905e9a"
             },
             "require": {
                 "ext-json": "*",
@@ -62,7 +62,7 @@
                 "Buphalo",
                 "Code Generation"
             ],
-            "time": "2019-10-23T16:09:41+00:00"
+            "time": "2019-10-29T17:44:28+00:00"
         },
         {
             "name": "psr/cache",
@@ -161,16 +161,16 @@
         },
         {
             "name": "psr/log",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd"
+                "reference": "bf73deb2b3b896a9d9c75f3f0d88185d2faa27e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
-                "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/bf73deb2b3b896a9d9c75f3f0d88185d2faa27e2",
+                "reference": "bf73deb2b3b896a9d9c75f3f0d88185d2faa27e2",
                 "shasum": ""
             },
             "require": {
@@ -179,7 +179,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
@@ -204,7 +204,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2018-11-20T15:27:04+00:00"
+            "time": "2019-10-25T08:06:51+00:00"
         },
         {
             "name": "symfony/cache",

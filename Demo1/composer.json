@@ -32,7 +32,7 @@
   "require": {
     "php": "^7.2",
     "ext-json": "*",
-    "neighborhoods/buphalo": "^1.0.0-rc3"
+    "neighborhoods/buphalo": "^1.0.0-RC5"
   },
   "autoload": {
     "psr-4": {
