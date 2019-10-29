@@ -8,9 +8,9 @@ interface CarInterface
 
     public function getModel(): string;
 
-    public function hasColor(): bool;
+    public function hasYear(): bool;
 
-    public function setColor(string $color): CarInterface;
+    public function setYear(int $color): CarInterface;
 
     public function hasModel(): bool;
 
@@ -22,5 +22,5 @@ interface CarInterface
 
     public function hasMake(): bool;
 
-    public function getColor(): string;
+    public function getYear(): int;
 }

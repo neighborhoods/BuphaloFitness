@@ -5,8 +5,8 @@ namespace Neighborhoods\BuphaloFitness\Demo2\DOR\V1;
 
 class Car implements CarInterface
 {
-    /** @var string */
-    private $color;
+    /** @var int */
+    private $year;
 
     /** @var string */
     private $make;
@@ -14,27 +14,27 @@ class Car implements CarInterface
     /** @var string */
     private $model;
 
-    public function getColor(): string
+    public function getYear(): int
     {
-        if ($this->color === null) {
+        if ($this->year === null) {
             throw new \LogicException('Car color has not been set.');
         }
 
-        return $this->color;
+        return $this->year;
     }
 
-    public function hasColor(): bool
+    public function hasYear(): bool
     {
-        return $this->color !== null;
+        return $this->year !== null;
     }
 
-    public function setColor(string $color): CarInterface
+    public function setYear(int $color): CarInterface
     {
-        if ($this->color !== null) {
+        if ($this->year !== null) {
             throw new \LogicException('Car color is already set.');
         }
 
-        $this->color = $color;
+        $this->year = $color;
 
         return $this;
     }
