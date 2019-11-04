@@ -7,4 +7,4 @@ Neighborhoods_Buphalo_V1_TargetApplication_BuilderInterface__SourceDirectoryPath
 Neighborhoods_Buphalo_V1_TargetApplication_BuilderInterface__FabricationDirectoryPath=$PWD/fab \
 Neighborhoods_Buphalo_V1_TargetApplication_BuilderInterface__NamespacePrefix=Neighborhoods\\BuphaloFitness\\Demo2 \
 Neighborhoods_Buphalo_V1_TemplateTree_Map_Builder_FactoryInterface__TemplateTreeDirectoryPaths=$PWD/templates \
-php vendor/bin/buphalo
+php vendor/bin/buphalo && composer dump-autoload -a

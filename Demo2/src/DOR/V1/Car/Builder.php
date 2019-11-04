@@ -18,7 +18,7 @@ class Builder implements BuilderInterface
 
         $record = $this->getRecord();
 
-        $Car->setColor($record['color']);
+        $Car->setYear($record['year']);
         $Car->setMake($record['make']);
         $Car->setModel($record['model']);
 
