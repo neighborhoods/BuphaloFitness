@@ -1,0 +1,13 @@
+#Use example file https://github.com/neighborhoods/Buphalo/blob/master/docs/AnnotationProcessors.md#example-fabrication-file
+actors:
+  <PrimaryActorName>/Builder.php:
+    template: PrimaryActorName/Builder.php
+    annotation_processors:
+      Builder.setters: # The AnnotationProcessorKey
+        processor_fqcn: \Neighborhoods\Buphalo\V1\AnnotationProcessors\Actor\Builder
+        static_context_record:
+          properties:
+            - record_key: 'bar'
+              set_method: 'setBar'
+            - record_Key: 'baz'
+              set_method: 'setBaz'
