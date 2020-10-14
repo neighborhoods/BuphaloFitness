@@ -1,0 +1,47 @@
+{
+  "name": "neighborhoods/buphalo/demo4",
+  "description": "Using a moderate Buphalo example",
+  "type": "project",
+  "keywords": [
+    "Buphalo",
+    "Code Generation"
+  ],
+  "authors": [
+    {
+      "name": "Jacques Marcotte",
+      "email": "jacques.marcotte@neighborhoods.com"
+    }
+  ],
+  "scripts": {
+    "post-update-cmd": [
+      "@composer dump-autoload -a"
+    ],
+    "post-install-cmd": [
+      "@composer dump-autoload -a"
+    ]
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://satis.neighborhoods.com"
+    }
+  ],
+  "config": {
+    "sort-packages": true
+  },
+  "require": {
+    "php": "^7.2",
+    "ext-json": "*",
+    "neighborhoods/buphalo": "^1.0.0-RC5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Neighborhoods\\BuphaloFitness\\Demo4\\": [
+        "src",
+        "fab"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

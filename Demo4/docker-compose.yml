@@ -1,0 +1,26 @@
+version: '2'
+
+services:
+
+### Mount Applications ######################################
+
+    applications:
+        image: tianon/true
+        volumes:
+            - ./:/var/www/html/demo4
+
+### Buphalo Container (php-fpm) #########################
+
+    demo4:
+        build:
+            context: .
+            args:
+                - COMPOSER_TOKEN=9f506692cafe6be658ce31bcd5e2a481ffb5e884
+                - INSTALL_XDEBUG=true
+                - COMPOSER_INSTALL=false
+        volumes_from:
+            - applications
+        expose:
+            - "9002"
+        environment:
+            PHP_IDE_CONFIG: "serverName=demo4.buphalofitness.neighborhoods.com"
