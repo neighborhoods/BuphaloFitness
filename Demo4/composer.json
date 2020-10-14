@@ -1,5 +1,5 @@
 {
-  "name": "neighborhoods/buphalo/demo4",
+  "name": "neighborhoods/buphalo-demo-4",
   "description": "Using a moderate Buphalo example",
   "type": "project",
   "keywords": [
@@ -17,6 +17,7 @@
       "@composer dump-autoload -a"
     ],
     "post-install-cmd": [
+      "bin/buphalo.sh",
       "@composer dump-autoload -a"
     ]
   },
