@@ -4,7 +4,7 @@ actors:
     template: PrimaryActorName/Builder.php
     annotation_processors:
       Builder.setters: # The AnnotationProcessorKey
-        processor_fqcn: \Neighborhoods\Buphalo\V1\AnnotationProcessors\Actor\Builder
+        processor_fqcn: \Neighborhoods\Buphalo\V1\AnnotationProcessor\Builder
         static_context_record:
           properties:
             - record_key: 'bar'
