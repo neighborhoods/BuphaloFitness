@@ -4,7 +4,9 @@ actors:
     template: PrimaryActorName/Builder.php
     annotation_processors:
       Builder.setters: # The AnnotationProcessorKey
-        processor_fqcn: \Neighborhoods\Buphalo\V1\AnnotationProcessor\Builder
+#        processor_fqcn: \Neighborhoods\Buphalo\V1\AnnotationProcessors\Actor\Builder # file doesn't exist
+        processor_fqcn: \Neighborhoods\Buphalo\V1\AnnotationProcessor\Builder # throws a type error:
+        # Repository::getByFQCN() must implement interface Neighborhoods\Buphalo\V1\AnnotationProcessorInterface, instance of Neighborhoods\Buphalo\V1\AnnotationProcessor\Builder
         static_context_record:
           properties:
             - record_key: 'bar'
