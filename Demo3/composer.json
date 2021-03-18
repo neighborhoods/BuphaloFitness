@@ -32,7 +32,8 @@
   "require": {
     "php": "^7.2",
     "ext-json": "*",
-    "neighborhoods/buphalo": "^1.0.0-RC5"
+    "neighborhoods/buphalo": "^1.0.0-RC5",
+    "symfony/cache": "^4.3.8"
   },
   "autoload": {
     "psr-4": {
