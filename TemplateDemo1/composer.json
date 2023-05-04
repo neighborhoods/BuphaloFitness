@@ -1,0 +1,61 @@
+{
+  "name": "neighborhoods/buphalo-fitness_buphalo-templates-1",
+  "description": "Using a simple Buphalo example",
+  "type": "project",
+  "keywords": [
+    "Buphalo",
+    "Code Generation"
+  ],
+  "authors": [
+    {
+      "name": "Jacques Marcotte",
+      "email": "jacques.marcotte@neighborhoods.com"
+    }
+  ],
+  "scripts": {
+    "post-update-cmd": [
+      "@composer dump-autoload -a"
+    ],
+    "post-install-cmd": [
+      "@composer dump-autoload -a"
+    ]
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://satis.neighborhoods.com"
+    },
+    {
+      "type": "path",
+      "url": "../../BuphaloTemplates/",
+      "options": {
+        "symlink": false
+      }
+    }
+  ],
+  "config": {
+    "sort-packages": true
+  },
+  "require": {
+    "php": "^7.4 || ^8.1",
+    "ext-json": "*",
+    "neighborhoods/buphalo": "^2.0.0",
+    "neighborhoods/buphalo-templates": "dev-main",
+    "neighborhoods/dependency-injection-container-builder": "^1.1",
+    "symfony/cache": "^4.3.8"
+  }
+  ,
+  "require-dev": {
+    "roave/security-advisories": "dev-latest"
+  },
+  "autoload": {
+    "psr-4": {
+      "Neighborhoods\\BuphaloFitness\\TemplateDemo1\\": [
+        "src",
+        "fab"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

@@ -1,0 +1,19 @@
+constants:
+  TYPE: 'vehicle'
+identity_field: vin
+properties:
+  vin:
+    data_type: int
+  year:
+    data_type: int
+  make:
+    data_type: string
+  model:
+    data_type: string
+  insurance_number:
+    data_type: ?string
+  owner:
+    data_type: \Neighborhoods\BuphaloFitness\TemplateDemo1\V1\PersonInterface
+  current_driver:
+    data_type: ?\Neighborhoods\BuphaloFitness\TemplateDemo1\V1\PersonInterface
+
