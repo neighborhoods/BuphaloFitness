@@ -18,6 +18,7 @@ if (!is_dir($cacheDir) && mkdir($cacheDir) && !is_dir($cacheDir)) {
     throw new \RuntimeException(sprintf('Directory "%s" was not created', $cacheDir));
 }
 
+unlink(__DIR__ . '/container_cache/*');
 $cacheHandler = (new SymfonyConfigCacheHandler\Builder())
     ->setName('test_car_builder')
     ->setCacheDirPath(__DIR__ . '/container_cache/')

@@ -20,19 +20,6 @@
       "@composer dump-autoload -a"
     ]
   },
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://satis.neighborhoods.com"
-    },
-    {
-      "type": "path",
-      "url": "../../BuphaloTemplates/",
-      "options": {
-        "symlink": false
-      }
-    }
-  ],
   "config": {
     "sort-packages": true
   },
@@ -40,7 +27,7 @@
     "php": "^7.4 || ^8.1",
     "ext-json": "*",
     "neighborhoods/buphalo": "^2.0.0",
-    "neighborhoods/buphalo-templates": "dev-main",
+    "neighborhoods/buphalo-templates": "dev-MLSS-2502-initial-buphalo-templates",
     "neighborhoods/dependency-injection-container-builder": "^1.1",
     "symfony/cache": "^4.3.8"
   }
