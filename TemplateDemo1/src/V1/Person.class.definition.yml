@@ -1,0 +1,8 @@
+constants:
+  TYPE: 'vehicle'
+identity_field: vin
+properties:
+  name:
+    data_type: string
+  age:
+    data_type: int

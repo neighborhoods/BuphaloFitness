@@ -1,0 +1,52 @@
+actors:
+  <PrimaryActorName>.php:
+    template: Php81/GeneralActors/V1/PrimaryActorName.php
+    annotation_processors:
+      ClassPropertiesAndAccessors:
+        processor_fqcn: \Neighborhoods\BuphaloTemplates\Php81\AnnotationProcessors\ClassDefinition\V1\ClassPropertiesAndAccessorsByFile
+        static_context_record: []
+  <PrimaryActorName>Interface.php:
+    template: Php81/GeneralActors/V1/PrimaryActorNameInterface.php
+    annotation_processors:
+      ClassInterfaceConstantsAndAccessors:
+        processor_fqcn: \Neighborhoods\BuphaloTemplates\Php81\AnnotationProcessors\ClassDefinition\V1\InterfaceConstantsAndAccessorsByFile
+        static_context_record: []
+  <PrimaryActorName>/<PrimaryActorName>.service.yml:
+    template: Php81/GeneralActors/V1/PrimaryActorName/PrimaryActorName.service.yml
+  <PrimaryActorName>/AwareTrait.php:
+    template: Php81/GeneralActors/V1/SharedActors/AwareTrait.php
+  <PrimaryActorName>/Factory.php:
+    template: Php81/GeneralActors/V1/SharedActors/Factory.php
+  <PrimaryActorName>/Factory.service.yml:
+    template: Php81/GeneralActors/V1/SharedActors/Factory.service.yml
+  <PrimaryActorName>/FactoryInterface.php:
+    template: Php81/GeneralActors/V1/SharedActors/FactoryInterface.php
+  <PrimaryActorName>/Factory/AwareTrait.php:
+    template: Php81/GeneralActors/V1/SharedActors/AwareTrait.php
+  <PrimaryActorName>/Builder.php:
+    template: Php81/GeneralActors/V1/PrimaryActorName/Builder.php
+    annotation_processors:
+      Builder.additional_factories:
+        processor_fqcn: \Neighborhoods\BuphaloTemplates\Php81\AnnotationProcessors\ClassDefinition\V1\Builder\AdditionalFactories
+        static_context_record: []
+      Builder.build:
+        processor_fqcn: \Neighborhoods\BuphaloTemplates\Php81\AnnotationProcessors\ClassDefinition\V1\Builder\Build
+        static_context_record: []
+  <PrimaryActorName>/Builder.service.yml:
+    template: Php81/GeneralActors/V1/PrimaryActorName/Builder.service.yml
+    annotation_processors:
+      BuilderService.calls:
+        processor_fqcn: \Neighborhoods\BuphaloTemplates\Php81\AnnotationProcessors\ClassDefinition\V1\Builder\ServiceCalls
+        static_context_record: []
+  <PrimaryActorName>/BuilderInterface.php:
+    template: Php81/GeneralActors/V1/PrimaryActorName/BuilderInterface.php
+  <PrimaryActorName>/Builder/AwareTrait.php:
+    template: Php81/GeneralActors/V1/SharedActors/AwareTrait.php
+  <PrimaryActorName>/Builder/Factory.php:
+    template: Php81/GeneralActors/V1/SharedActors/Factory.php
+  <PrimaryActorName>/Builder/Factory.service.yml:
+    template: Php81/GeneralActors/V1/SharedActors/Factory.service.yml
+  <PrimaryActorName>/Builder/FactoryInterface.php:
+    template: Php81/GeneralActors/V1/SharedActors/FactoryInterface.php
+  <PrimaryActorName>/Builder/Factory/AwareTrait.php:
+    template: Php81/GeneralActors/V1/SharedActors/AwareTrait.php
